@@ -4,14 +4,14 @@ import joblib
 import numpy as np
 
 # Load model
-model = joblib.load("base_model.pkl")
+model = joblib.load("rf_model.pkl")
 
 # Streamlit UI
 st.title("My first ML App (Study on Imbalanced Data Classification by 67130701705 ")
 
 # Input fields
 features = []
-for i in range(300):  # Adjust based on dataset
+for i in range(6):  # Adjust based on dataset
     value = st.number_input(f"Feature_{i}", value=0.0)
     features.append(value)
 
